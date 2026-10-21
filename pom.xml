@@ -5,7 +5,7 @@
     <artifactId>tidy-builds</artifactId>
     <groupId>nl.jhutting.talks</groupId>
     <version>01.00.00-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>tidy-builds</name>
 
@@ -13,6 +13,7 @@
         <module>copying-code</module>
         <module>log4j</module>
         <module>scope</module>
+        <module>trim</module>
     </modules>
 
     <properties>
