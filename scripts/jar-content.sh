@@ -1,0 +1,1 @@
+jar tf ../trim/target/trim-01.00.00-SNAPSHOT.jar | grep BOOT-INF/lib/
