@@ -1,6 +1,8 @@
 .idea/
 target/
 out/
+repository-demo/
+logs/
 
 pom.xml.versionsBackup
 
