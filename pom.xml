@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>tidy-builds</artifactId>
+    <groupId>nl.jhutting.talks</groupId>
+    <version>01.00.00-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>tidy-builds</name>
+
+    <modules>
+        <module>copying-code</module>
+        <module>log4j</module>
+        <module>scope</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.source>25</maven.compiler.source>
+
+        <commons-lang.version>3.21.0</commons-lang.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <configuration>
+                        <ignoredVersions>.*-M.*,.*-alpha.*,.*-beta.*,.*CR.*</ignoredVersions>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
