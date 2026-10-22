@@ -12,7 +12,6 @@
     <modules>
         <module>copying-code</module>
         <module>log4j</module>
-        <module>scope</module>
         <module>trim</module>
     </modules>
 
