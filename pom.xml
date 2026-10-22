@@ -12,7 +12,6 @@
     <modules>
         <module>copying-code</module>
         <module>log4j</module>
-        <module>scope</module>
         <module>sort</module>
         <module>trim</module>
     </modules>
@@ -41,7 +40,7 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
                     <configuration>
-                        <ignoredVersions>.*-M.*,.*-alpha.*,.*-beta.*,.*CR.*</ignoredVersions>
+                        <ignoredVersions>(?i).*-(alpha|beta|m|rc|cr)[.-]?\d*.*</ignoredVersions>
                     </configuration>
                 </plugin>
             </plugins>
