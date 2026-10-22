@@ -12,6 +12,7 @@
     <modules>
         <module>copying-code</module>
         <module>log4j</module>
+        <module>sort</module>
         <module>trim</module>
     </modules>
 
